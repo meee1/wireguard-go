@@ -22,7 +22,7 @@ jobs:
         go-version: '1.20'
 
     - name: Build    
-      run: GOOS=android GOARCH=arm64 go build -v ./... -o bin/app-arm64-android
+      run: GOOS=android GOARCH=arm64 go build -o bin/app-arm64-android
 
     - name: Test
       run: go test -v ./...
